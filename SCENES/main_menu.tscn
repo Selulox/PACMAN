@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=3 uid="uid://cx2nnewaaw3m0"]
+
+[ext_resource type="Texture2D" uid="uid://cpv72ey27gvlf" path="res://ASSETS/MENU_BACKGROUND/pacman_menu1.png" id="1_gb6oj"]
+[ext_resource type="Texture2D" uid="uid://cjggaw6fc7wjc" path="res://ASSETS/MENU_BACKGROUND/pacman_menu2.png" id="2_7w3h0"]
+[ext_resource type="Texture2D" uid="uid://b23lbmge4pw2m" path="res://ASSETS/MENU_BACKGROUND/pacman_menu3.png" id="3_s2lum"]
+[ext_resource type="Texture2D" uid="uid://cx4b3g5lwmtpv" path="res://ASSETS/MENU_BACKGROUND/pacman_menu4.png" id="4_bqjxr"]
+[ext_resource type="Texture2D" uid="uid://bjxyurruhaw2g" path="res://ASSETS/MENU_BACKGROUND/pacman_menu5.png" id="5_lqxwi"]
+[ext_resource type="Texture2D" uid="uid://bsftobn02ipt" path="res://ASSETS/MENU_BACKGROUND/pacman_menu6.png" id="6_ipemx"]
+[ext_resource type="Texture2D" uid="uid://xpxe1teeema" path="res://ASSETS/MENU_BACKGROUND/pacman_menu7.png" id="7_s51aj"]
+[ext_resource type="Texture2D" uid="uid://ddkk7v3t6j8fu" path="res://ASSETS/MENU_BACKGROUND/pacman_menu8.png" id="8_poj48"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8pn1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gb6oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7w3h0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_s2lum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bqjxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lqxwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ipemx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_s51aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_poj48")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="MAIN_MENU" type="Node"]
+
+[node name="BACKGROUND" type="AnimatedSprite2D" parent="."]
+position = Vector2(152, 200)
+sprite_frames = SubResource("SpriteFrames_f8pn1")
+autoplay = "default"
+frame_progress = 0.410103

@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://bjbrsfk2w1tlv"]
+
+[ext_resource type="Texture2D" uid="uid://hc4qhtb0pmpm" path="res://ASSETS/SPRITES/greenGhost.png" id="1_5arbv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7q6p"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0gy2"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo66d"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgt87"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82lhf"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1e2h5"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fit3a"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcm5j"]
+atlas = ExtResource("1_5arbv")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j6uc3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7q6p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0gy2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo66d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgt87")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82lhf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1e2h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fit3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gcm5j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfmse"]
+radius = 8.0
+
+[node name="Ghost_2" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j6uc3")
+autoplay = "default"
+frame_progress = 0.046402
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nfmse")
