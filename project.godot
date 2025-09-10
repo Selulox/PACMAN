@@ -24,6 +24,10 @@ Global="*res://SCRIPTS/global.gd"
 window/size/viewport_width=304
 window/size/viewport_height=400
 
+[gui]
+
+theme/custom_font="uid://b4bhxa0l8mohc"
+
 [input]
 
 right={
